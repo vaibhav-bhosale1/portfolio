@@ -1,3 +1,4 @@
+"use client";
 import React from 'react'
 import { FaGithub, FaLinkedin } from 'react-icons/fa'
 import { SiGeeksforgeeks, SiLeetcode } from 'react-icons/si'
