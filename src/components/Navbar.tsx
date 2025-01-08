@@ -48,7 +48,7 @@ const Navbar = () => {
             
               navLinks.map((link,index)=>(
                   <li key={index}>
-                    <Link  href={link.path} className="text-white/20 hover:text">
+                    <Link  href={link.path} className="text-white/70 hover:text">
                         <p>{link.title}</p>
                     </Link>
                   </li>
@@ -57,7 +57,7 @@ const Navbar = () => {
             }
               <li>
                 <a href="#contact" className="group">
-                  <h1 className="text-lg font-bold text-white/70 cursor-pointer ">Contact Me</h1>
+                  <h1 className="text-lg font-bold text-white/70 cursor-pointer">Contact</h1>
                   <div className="relative">
                         <div className="absolute w-2/3 h-1 transition-all duration-300 ease-out bg-orange-400 rounded-full group-hover:w-full">
                         
