@@ -1,11 +1,11 @@
-import { div } from "framer-motion/client";
+
 import React from "react";
 import {
   FaCss3Alt,
   FaHtml5,
   FaJsSquare,
   FaNode,
-  FaNodeJs,
+
   FaReact,
 } from "react-icons/fa";
 

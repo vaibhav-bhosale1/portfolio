@@ -5,7 +5,7 @@ import project2 from "../assets/proj2.jpg";
 
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { li } from "framer-motion/client";
+
 
 const projects = [
   {
