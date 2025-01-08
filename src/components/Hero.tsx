@@ -19,7 +19,7 @@ const Hero = () => {
           <h1 className="text-[#E48A57]">Vaibhav Bhosale</h1>
         </div>
 
-        <motion.div className="hidden md:block absolute left-[100px] top-[140px]" drag>
+        <motion.div className="hidden md:block absolute left-[70px] top-[170px]" drag>
           <Image
             src={cursor}
             height={150}
@@ -30,7 +30,7 @@ const Hero = () => {
           />
         </motion.div>
 
-        <motion.div className="hidden md:block absolute right-[40px] top-[20px]" drag>
+        <motion.div className="hidden md:block absolute right-[20px] top-[20px]" drag>
           <Image
             src={lightning}
             height={100}
