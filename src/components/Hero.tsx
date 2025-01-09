@@ -7,7 +7,7 @@ import cursor from "../assets/icon1.png";
 import lightning from "../assets/icon2.png";
 import { TypeAnimation } from 'react-type-animation';
 import React from "react";
-
+import me from "../../public/me.jpg"
 
 const Hero = () => {
   return (
@@ -77,7 +77,9 @@ const Hero = () => {
 
         {/* Profile Image */}
         <Image
-          src={profilepic}
+          src={me}
+          height={150} // Increased size
+          width={150}
           alt="profilepic"
           className="h-auto w-auto mx-auto"
         />

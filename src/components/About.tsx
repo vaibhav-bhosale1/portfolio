@@ -15,7 +15,7 @@ import { SiGeeksforgeeks, SiLeetcode } from 'react-icons/si'
 
 const About = () => {
   return (
-    <div className='max-w-[1200px] mx-auto mt-10 b-0' id='about'>
+    <div className='max-w-[1000px] mx-auto mt-10 b-0' id='about'>
         <h1 className='text-white text-6xl max-w-[320px] mx-auto font-semibold p-4 mb-4'>
             About <span className='text-orange-400'>Me</span>
         </h1>
