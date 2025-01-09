@@ -12,8 +12,8 @@ import {
   FaReact,
 } from "react-icons/fa";
 import { RiNextjsFill } from "react-icons/ri";
-import { SiCplusplus, SiExpress, SiMongodb, SiMysql, SiReact, SiTailwindcss } from "react-icons/si";
-RiNextjsFill
+import { SiCplusplus, SiExpress, SiMongodb, SiMysql, SiReact, SiTailwindcss, SiTypescript } from "react-icons/si";
+
 const skillsIcon = [
   {
     icon: <FaReact size={140} />,
@@ -65,6 +65,10 @@ const skillsIcon = [
   },
   {
     icon: <FaJsSquare size={140} />,
+    label: "Javascript",
+  },
+  {
+    icon: <SiTypescript size={140} />,
     label: "Javascript",
   },
 
