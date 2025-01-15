@@ -33,7 +33,7 @@ const skillsIcon = [
   },
   {
     icon: <SiTailwindcss size={140} />,
-    label: "C++",
+    label: "Tailwind CSS",
   },
   {
     icon: <SiMongodb size={140} />,
@@ -69,7 +69,7 @@ const skillsIcon = [
   },
   {
     icon: <SiTypescript size={140} />,
-    label: "Javascript",
+    label: "Typescript",
   },
 
 ];
