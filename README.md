@@ -1,36 +1,31 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Vaibhav Bhosale's Portfolio
 
-## Getting Started
+Welcome to the portfolio repository of Vaibhav Bhosale, a BTech student specializing in Electronics and Telecommunication, with expertise in web development and software engineering. This portfolio showcases a variety of projects, technical skills, and accomplishments.
 
-First, run the development server:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Demo
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Check out the live version of the portfolio here:
+[Portfolio Demo](https://vaibhavbhosale.vercel.app/)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Profile Links
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+[Leetcode](https://leetcode.com/u/vaibhav_bhosale_/)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+[Linkedin](https://www.linkedin.com/in/vaibhav-bhosale-0a2b13259/)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+[Geeksforgeeks](https://www.geeksforgeeks.org/user/vaibhavbhosale/)
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Tech Stack
+
+- **Frontend**: HTML, CSS, JavaScript, React, TailwindCSS
+- **Backend**: Node.js (for any backend requirements)
+- **Design**: TailwindCSS for responsive UI and design
+- **Deployment**: Vercel/Netlify for easy deployment
+- **Version Control**: Git, GitHub for version tracking
+
+
