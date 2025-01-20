@@ -28,7 +28,6 @@ const projects = [
     title: "Blogify - A Blog Website",
     desc: "Created a full-stack blog application with CRUD operations, authentication, and responsive UI.",
     devStack: "Node.js, Express.js, MongoDB, React.js, TailwindCSS",
-   
     git: "https://github.com/vaibhav-bhosale1/",
     src: project3,
   },
@@ -37,7 +36,7 @@ const projects = [
 const Portfolio = () => {
   return (
     <div
-      className="text-white bg-gradient-to-b from-black to-[#381a5f] py-18 mt-3"
+      className="bg-black text-white py-18 mt-3"
       id="portfolio"
     >
       <h1 className="text-white text-6xl max-w-[320px] mx-auto font-semibold my-12">

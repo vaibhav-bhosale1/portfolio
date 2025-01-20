@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import { motion } from "framer-motion";
 import {
   FaBootstrap,
   FaCss3Alt,
@@ -7,12 +8,10 @@ import {
   FaJava,
   FaJsSquare,
   FaNode,
-  
-
   FaReact,
 } from "react-icons/fa";
 import { RiNextjsFill } from "react-icons/ri";
-import { SiCplusplus, SiExpress, SiMongodb, SiMysql, SiReact, SiTailwindcss, SiTypescript } from "react-icons/si";
+import { SiCplusplus, SiExpress, SiMongodb, SiMysql, SiTailwindcss, SiTypescript } from "react-icons/si";
 
 const skillsIcon = [
   {
@@ -21,15 +20,15 @@ const skillsIcon = [
   },
   {
     icon: <FaNode size={140} />,
-    label: "Node",
+    label: "Node.js",
   },
   {
     icon: <RiNextjsFill size={140} />,
-    label: "Next js",
+    label: "Next.js",
   },
   {
     icon: <SiExpress size={140} />,
-    label: "Express",
+    label: "Express.js",
   },
   {
     icon: <SiTailwindcss size={140} />,
@@ -37,7 +36,7 @@ const skillsIcon = [
   },
   {
     icon: <SiMongodb size={140} />,
-    label: "Mongodb",
+    label: "MongoDB",
   },
   {
     icon: <SiCplusplus size={140} />,
@@ -45,49 +44,63 @@ const skillsIcon = [
   },
   {
     icon: <SiMysql size={140} />,
-    label: "Mongodb",
+    label: "MySQL",
   },
   {
     icon: <FaJava size={140} />,
-    label: "C++",
+    label: "Java",
   },
   {
     icon: <FaBootstrap size={140} />,
-    label: "Mongodb",
+    label: "Bootstrap",
   },
   {
     icon: <FaHtml5 size={140} />,
-    label: "HTML",
+    label: "HTML5",
   },
   {
     icon: <FaCss3Alt size={140} />,
-    label: "CSS",
+    label: "CSS3",
   },
   {
     icon: <FaJsSquare size={140} />,
-    label: "Javascript",
+    label: "JavaScript",
   },
   {
     icon: <SiTypescript size={140} />,
-    label: "Typescript",
+    label: "TypeScript",
   },
-
 ];
 
 const Skills = () => {
   return (
-    <div className="bg-[linear-gradient(to_top,#000,#381a5f_80%)] py-32">
+    <div className="bg-black py-32">
       <div className="text-white w-[400px] md:min-w-[950px] mx-auto p-8 text-center">
-        <h2 className="text-6xl font-bold mb-4">Technical Skills</h2>
+        {/* Animated Title */}
+        <motion.h2
+          className="text-6xl font-bold mb-4"
+          initial={{ scale: 0.8, opacity: 0 }}
+          animate={{ scale: 1, opacity: 1 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+        >
+          Technical Skills
+        </motion.h2>
+        {/* Skills Grid */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
           {skillsIcon.map((skill, index) => (
-            <div
+            <motion.div
               key={index}
-              className="h-[160px] w-[160px] md:h-[220px] md:w-[220px] flex flex-col justify-between items-center bg-white/10 p-4 rounded-xl "
+              className="h-[160px] w-[160px] md:h-[220px] md:w-[220px] flex flex-col justify-between items-center bg-white/10 p-4 rounded-xl"
+              whileHover={{
+                scale: 1.1,
+                rotate: 5,
+                backgroundColor: "rgba(255, 255, 255, 0.2)",
+              }}
+              transition={{ duration: 0.3, ease: "easeInOut" }}
             >
               {skill.icon}
               <p className="mt-2">{skill.label}</p>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>

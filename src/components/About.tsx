@@ -10,36 +10,32 @@ import { SiGeeksforgeeks, SiLeetcode } from "react-icons/si";
 
 const About = () => {
   return (
-    <div className="max-w-screen-xl mx-auto p-6" id="about">
+    <div className="max-w-screen-xl mx-auto p-6 bg-black text-white" id="about">
       {/* Main Heading */}
-      <h1 className="text-center text-4xl md:text-6xl font-bold text-white mb-10">
+      <h1 className="text-center text-4xl md:text-6xl font-bold mb-10">
         About <span className="text-orange-400">Me</span>
       </h1>
 
       <div className="grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
         {/* Education Section */}
-        <div className="relative bg-gradient-to-b from-purple-700 via-orange-500 to-orange-600 rounded-lg shadow-lg overflow-hidden">
+        <div className="relative bg-gray-800 rounded-lg shadow-lg overflow-hidden transform transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-orange-500 animate__animated animate__fadeIn">
           <div className="absolute inset-0 bg-black/30"></div>
           <div className="p-6 relative z-10 flex flex-col items-center">
             <Image src={book} alt="Education" className="w-16 h-16 mb-4" />
-            <h2 className="text-2xl font-bold text-white mb-2">Education</h2>
-            <p className="text-center text-white">
-              B.Tech in Electronics and Telecommunication
-            </p>
-            <p className="text-center text-white">
-              Vishwakarma Institute of Information Technology
-            </p>
-            <p className="text-center text-white font-semibold">CGPA: 7.75</p>
+            <h2 className="text-2xl font-bold text-orange-400 mb-2">Education</h2>
+            <p className="text-center">B.Tech in Electronics and Telecommunication</p>
+            <p className="text-center">Vishwakarma Institute of Information Technology</p>
+            <p className="text-center font-semibold">CGPA: 7.75</p>
           </div>
         </div>
 
         {/* Profile Links Section */}
-        <div className="relative bg-gradient-to-b from-purple-700 via-orange-500 to-purple-600 rounded-lg shadow-lg overflow-hidden">
+        <div className="relative bg-gray-800 rounded-lg shadow-lg overflow-hidden transform transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-orange-500 animate__animated animate__fadeIn">
           <div className="absolute inset-0 bg-black/30"></div>
           <div className="p-6 relative z-10 flex flex-col items-center">
             <Image src={pc} alt="Links" className="w-16 h-16 mb-4" />
-            <h2 className="text-2xl font-bold text-white mb-2">Profile Links</h2>
-            <ul className="text-center text-white space-y-2">
+            <h2 className="text-2xl font-bold text-orange-400 mb-2">Profile Links</h2>
+            <ul className="text-center space-y-2">
               <li className="flex items-center justify-center gap-3">
                 <FaGithub size={20} className="text-orange-300" />
                 <a
@@ -89,24 +85,19 @@ const About = () => {
         </div>
 
         {/* About Section */}
-        <div className="relative bg-gradient-to-b from-purple-700 via-orange-500 to-purple-600 rounded-lg shadow-lg overflow-hidden">
+        <div className="relative bg-gray-800 rounded-lg shadow-lg overflow-hidden transform transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-orange-500 animate__animated animate__fadeIn">
           <div className="absolute inset-0 bg-black/30"></div>
           <div className="p-6 relative z-10 flex flex-col items-center">
             <Image src={card} alt="About" className="w-16 h-16 mb-4" />
-            <h2 className="text-2xl font-bold text-white mb-2">About Me</h2>
-            <p className="text-center text-white">
-              I am a BTech student in Electronics and Telecommunication at VIIT
-              Pune with expertise in web development and software engineering. I
-              have experience in React, Node.js, and Next.js, gained through
-              internships at Bluestock Fintech and Suvidha Foundation, where I
-              developed responsive interfaces and efficient backend
-              integrations.
+            <h2 className="text-2xl font-bold text-orange-400 mb-2">About Me</h2>
+            <p className="text-center">
+              I am a BTech student in Electronics and Telecommunication at VIIT Pune with expertise in web development and software engineering. I have experience in React, Node.js, and Next.js, gained through internships at Bluestock Fintech and Suvidha Foundation, where I developed responsive interfaces and efficient backend integrations.
             </p>
           </div>
         </div>
 
         {/* Internship Section */}
-        <div className="relative bg-gradient-to-b from-purple-700 via-orange-500 to-orange-600 rounded-lg shadow-lg overflow-hidden col-span-1 sm:col-span-2 lg:col-span-3">
+        <div className="relative bg-gray-800 rounded-lg shadow-lg overflow-hidden col-span-1 sm:col-span-2 lg:col-span-3 transform transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-orange-500 animate__animated animate__fadeIn">
           <div className="absolute inset-0 bg-black/30"></div>
           <div className="p-6 relative z-10">
             <Image
@@ -114,48 +105,31 @@ const About = () => {
               alt="Internship Experience"
               className="w-16 h-16 mb-4 mx-auto"
             />
-            <h2 className="text-2xl font-bold text-white text-center mb-4">
+            <h2 className="text-2xl font-bold text-center text-orange-400 mb-4">
               Internship Experience
             </h2>
             <div className="space-y-6">
               <div className="bg-white/10 p-4 rounded-lg">
-                <h3 className="text-lg font-bold text-orange-300">
-                  Bluestock Fintech
-                </h3>
+                <h3 className="text-lg font-bold text-orange-300">Bluestock Fintech</h3>
                 <p className="text-sm text-gray-300">June 2023 - July 2023</p>
-                <ul className="text-white list-disc ml-4">
+                <ul className="list-disc ml-4">
                   <li>
-                    Developed the dynamic and responsive web pages using HTML,
-                    CSS, JavaScript, and Bootstrap, designed and executed
-                    visually stunning and highly functional user interfaces,
-                    leading to an increase in user engagement.
+                    Developed dynamic and responsive web pages using HTML, CSS, JavaScript, and Bootstrap, designed and executed visually stunning and highly functional user interfaces, leading to an increase in user engagement.
                   </li>
                   <li>
-                    Led the effort to roll out 4 new customer-centric features
-                    in collaboration with product and engineering teams, ensured
-                    smooth integration with backend systems, contributing to a
-                    30% increase in user engagement metrics.
+                    Led the effort to roll out 4 new customer-centric features in collaboration with product and engineering teams, ensuring smooth integration with backend systems, contributing to a 30% increase in user engagement metrics.
                   </li>
                 </ul>
               </div>
               <div className="bg-white/10 p-4 rounded-lg">
-                <h3 className="text-lg font-bold text-orange-300">
-                  Suvidha Foundation
-                </h3>
+                <h3 className="text-lg font-bold text-orange-300">Suvidha Foundation</h3>
                 <p className="text-sm text-gray-300">May 2022 - July 2022</p>
-                <ul className="text-white list-disc ml-4">
+                <ul className="list-disc ml-4">
                   <li>
-                    Responsible for designing and implementing the frontend
-                    using React and TailwindCSS, providing flexibility in
-                    building user interfaces to create responsive and visually
-                    appealing web applications.
+                    Designed and implemented the frontend using React and TailwindCSS, providing flexibility in building user interfaces to create responsive and visually appealing web applications.
                   </li>
                   <li>
-                    Seamless communication between frontend and backend systems
-                    by implementing RESTful APIs in Node.js, creating 10+
-                    endpoints, parsing data efficiently, and optimizing
-                    client-server interaction, resulting in a 15% decrease in
-                    data processing time.
+                    Ensured seamless communication between frontend and backend systems by implementing RESTful APIs in Node.js, creating 10+ endpoints, parsing data efficiently, and optimizing client-server interaction, resulting in a 15% decrease in data processing time.
                   </li>
                 </ul>
               </div>
