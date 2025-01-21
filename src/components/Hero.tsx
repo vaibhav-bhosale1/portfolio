@@ -14,7 +14,7 @@ const Hero = () => {
     <div className="min-h-screen flex flex-col justify-center items-center overflow-hidden relative bg-black text-white">
       {/* Spline Background */}
       <div className="absolute inset-0 z-0">
-        <Spline scene="https://prod.spline.design/NFyRKVXCTAG2RHYk/scene.splinecode" />
+        <Spline scene="https://prod.spline.design/67OMd-sGFQyksMJ6/scene.splinecode" />
       </div>
 
       {/* Content */}
