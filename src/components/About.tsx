@@ -98,44 +98,56 @@ const About = () => {
 
         {/* Internship Section */}
         <div className="relative bg-gray-800 rounded-lg shadow-lg overflow-hidden col-span-1 sm:col-span-2 lg:col-span-3 transform transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-orange-500 animate__animated animate__fadeIn">
-          <div className="absolute inset-0 bg-black/30"></div>
-          <div className="p-6 relative z-10">
-            <Image
-              src={finance}
-              alt="Internship Experience"
-              className="w-16 h-16 mb-4 mx-auto"
-            />
-            <h2 className="text-2xl font-bold text-center text-orange-400 mb-4">
-              Internship Experience
-            </h2>
-            <div className="space-y-6">
-              <div className="bg-white/10 p-4 rounded-lg">
-                <h3 className="text-lg font-bold text-orange-300">Bluestock Fintech</h3>
-                <p className="text-sm text-gray-300">June 2023 - July 2023</p>
-                <ul className="list-disc ml-4">
-                  <li>
-                    Developed dynamic and responsive web pages using HTML, CSS, JavaScript, and Bootstrap, designed and executed visually stunning and highly functional user interfaces, leading to an increase in user engagement.
-                  </li>
-                  <li>
-                    Led the effort to roll out 4 new customer-centric features in collaboration with product and engineering teams, ensuring smooth integration with backend systems, contributing to a 30% increase in user engagement metrics.
-                  </li>
-                </ul>
-              </div>
-              <div className="bg-white/10 p-4 rounded-lg">
-                <h3 className="text-lg font-bold text-orange-300">Suvidha Foundation</h3>
-                <p className="text-sm text-gray-300">May 2022 - July 2022</p>
-                <ul className="list-disc ml-4">
-                  <li>
-                    Designed and implemented the frontend using React and TailwindCSS, providing flexibility in building user interfaces to create responsive and visually appealing web applications.
-                  </li>
-                  <li>
-                    Ensured seamless communication between frontend and backend systems by implementing RESTful APIs in Node.js, creating 10+ endpoints, parsing data efficiently, and optimizing client-server interaction, resulting in a 15% decrease in data processing time.
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
+  <div className="absolute inset-0 bg-black/30"></div>
+  <div className="p-6 relative z-10">
+    <Image
+      src={finance}
+      alt="Internship Experience"
+      className="w-16 h-16 mb-4 mx-auto"
+    />
+    <h2 className="text-2xl font-bold text-center text-orange-400 mb-4">
+      Internship Experience
+    </h2>
+    <div className="space-y-6">
+      <div className="bg-white/10 p-4 rounded-lg w-11/12 mx-auto md:w-3/4">
+        <h3 className="text-lg font-bold text-orange-300">Bluestock Fintech</h3>
+        <p className="text-sm text-gray-300">June 2023 - July 2023</p>
+        <ul className="list-disc ml-4">
+          <li>
+            Developed dynamic and responsive web pages using HTML, CSS,
+            JavaScript, and Bootstrap, designed and executed visually stunning
+            and highly functional user interfaces, leading to an increase in
+            user engagement.
+          </li>
+          <li>
+            Led the effort to roll out 4 new customer-centric features in
+            collaboration with product and engineering teams, ensuring smooth
+            integration with backend systems, contributing to a 30% increase in
+            user engagement metrics.
+          </li>
+        </ul>
+      </div>
+      <div className="bg-white/10 p-4 rounded-lg w-11/12 mx-auto md:w-3/4">
+        <h3 className="text-lg font-bold text-orange-300">Suvidha Foundation</h3>
+        <p className="text-sm text-gray-300">May 2022 - July 2022</p>
+        <ul className="list-disc ml-4">
+          <li>
+            Designed and implemented the frontend using React and TailwindCSS,
+            providing flexibility in building user interfaces to create
+            responsive and visually appealing web applications.
+          </li>
+          <li>
+            Ensured seamless communication between frontend and backend systems
+            by implementing RESTful APIs in Node.js, creating 10+ endpoints,
+            parsing data efficiently, and optimizing client-server interaction,
+            resulting in a 15% decrease in data processing time.
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
       </div>
     </div>
   );
