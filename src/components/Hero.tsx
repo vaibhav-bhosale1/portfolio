@@ -12,8 +12,8 @@ import Spline from "@splinetool/react-spline";
 const Hero = () => {
   return (
     <div className="min-h-screen flex flex-col justify-center items-center overflow-hidden relative bg-black text-white">
-      {/* Spline Background */}
-      <div className="absolute inset-0 z-0">
+      {/* Spline Background (Hidden on Mobile) */}
+      <div className="absolute inset-0 z-0 hidden md:block">
         <Spline scene="https://prod.spline.design/67OMd-sGFQyksMJ6/scene.splinecode" />
       </div>
 
