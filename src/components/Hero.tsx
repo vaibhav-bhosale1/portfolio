@@ -7,14 +7,19 @@ import lightning from "../assets/icon2.png";
 import { TypeAnimation } from "react-type-animation";
 import React from "react";
 import me from "../../public/me.jpg";
-import Spline from "@splinetool/react-spline";
 
 const Hero = () => {
   return (
     <div className="min-h-screen flex flex-col justify-center items-center overflow-hidden relative bg-black text-white">
       {/* Spline Background (Hidden on Mobile) */}
-      <div className="absolute inset-0 z-0 hidden md:block">
-        <Spline scene="https://prod.spline.design/67OMd-sGFQyksMJ6/scene.splinecode" />
+      <div className="absolute inset-0 z-0 ">
+        <video
+          src="/vaporwave-background.mp4"
+          autoPlay
+          loop
+          muted
+          className="w-full h-full object-cover"
+        ></video>
       </div>
 
       {/* Content */}

@@ -7,7 +7,12 @@ import mail from '../assets/mail.png'
 
 const Contact = () => {
   return (
+    <>
+  <h1 className="text-center text-4xl md:text-6xl font-bold mb-10">
+        Contact <span className="text-orange-400">Me</span>
+      </h1>
     <div className='max-w-[1000px] mx-auto flex flex-col lg:flex-row text-white/70 p-8 rounde space-y-8 lg:space-y-0 lg:space-x-8' id='contact'>
+      
       <div className='flex justify-center items-center'>
           <ul className='space-y-4'>
             <li className='flex items-center'>
@@ -37,6 +42,7 @@ const Contact = () => {
             </form>
          </div>
     </div>
+    </>
   )
 }
 
