@@ -92,7 +92,7 @@ const Contact = () => {
                 name="message"
                 className="bg-black/70 w-full rounded-xl p-3 focus:outline-none focus:ring-2 focus:ring-orange-400"
                 placeholder="Your message"
-                rows="4"
+               
                 required
               />
               <button
