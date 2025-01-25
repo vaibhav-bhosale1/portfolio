@@ -74,34 +74,39 @@ const skillsIcon = [
 
 const Skills = () => {
   return (
-    <div className="bg-black py-32">
-      <div className="text-white w-[400px] md:min-w-[950px] mx-auto p-8 text-center">
-        {/* Animated Title */}
-        <motion.h2
-          className="text-6xl font-bold mb-4"
-          initial={{ scale: 0.8, opacity: 0 }}
-          animate={{ scale: 1, opacity: 1 }}
-          transition={{ duration: 0.8, ease: "easeOut" }}
-        >
-          Technical Skills
-        </motion.h2>
-        {/* Skills Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-          {skillsIcon.map((skill, index) => (
-            <motion.div
-              key={index}
-              className="h-[160px] w-[160px] md:h-[220px] md:w-[220px] flex flex-col justify-between items-center bg-white/10 p-4 rounded-xl"
-              whileHover={{
-                scale: 1.1,
-                rotate: 5,
-                backgroundColor: "rgba(255, 255, 255, 0.2)",
-              }}
-              transition={{ duration: 0.3, ease: "easeInOut" }}
-            >
-              {skill.icon}
-              <p className="mt-2">{skill.label}</p>
-            </motion.div>
-          ))}
+    <div className="relative bg-black py-3">
+      {/* Background Video */}
+  
+      {/* Content Section */}
+      <div className="relative z-10">
+        <div className="text-white w-[400px] md:min-w-[950px] mx-auto p-8 text-center">
+          {/* Animated Title */}
+          <motion.h2
+            className="text-6xl font-bold mb-4"
+            initial={{ scale: 0.8, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+          >
+            Technical Skills
+          </motion.h2>
+          {/* Skills Grid */}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+            {skillsIcon.map((skill, index) => (
+              <motion.div
+                key={index}
+                className="h-[160px] w-[160px] md:h-[220px] md:w-[220px] flex flex-col justify-between items-center bg-white/10 p-4 rounded-xl"
+                whileHover={{
+                  scale: 1.1,
+                  rotate: 5,
+                  backgroundColor: "rgba(255, 255, 255, 0.2)",
+                }}
+                transition={{ duration: 0.3, ease: "easeInOut" }}
+              >
+                {skill.icon}
+                <p className="mt-2">{skill.label}</p>
+              </motion.div>
+            ))}
+          </div>
         </div>
       </div>
     </div>

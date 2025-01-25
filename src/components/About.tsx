@@ -12,8 +12,7 @@ import { motion } from "framer-motion";
 const About = () => {
   return (
     <div className="relative max-w-screen-xl mx-auto p-6 bg-black text-white " id="about ">
-      {/* Background Video */}
-     
+  
 
       {/* Main Heading */}
       <h1 className="text-center text-4xl md:text-6xl font-bold mb-10 relative z-10">
@@ -154,11 +153,7 @@ const About = () => {
               animate={{ opacity: 1 }}
               transition={{ duration: 0.8, delay: 0.4 }}
             >
-              I am a BTech student in Electronics and Telecommunication at VIIT Pune
-              with expertise in web development and software engineering. I have
-              experience in React, Node.js, and Next.js, gained through internships
-              at Bluestock Fintech and Suvidha Foundation, where I developed
-              responsive interfaces and efficient backend integrations.
+             I'm Vaibhav Bhosale, a pre-final year student skilled in full-stack development and Data Structures & Algorithms. I specialize in building high-performance MERN stack applications, solving problems, writing clean code, and learning new technologies to deliver impactful solutions.
             </motion.p>
           </div>
         </motion.div>
