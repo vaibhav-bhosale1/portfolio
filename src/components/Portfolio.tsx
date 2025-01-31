@@ -43,7 +43,7 @@ const projects = [
 
 const Portfolio = () => {
   return (
-    <div className="relative bg-black text-white py-20 mt-3" id="portfolio">
+    <div className="relative  text-white py-20 mt-3" id="portfolio">
       {/* Background Video */}
      
 

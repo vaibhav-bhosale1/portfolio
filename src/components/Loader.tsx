@@ -25,18 +25,18 @@ const Loader: React.FC<{ onLoadComplete: () => void }> = ({ onLoadComplete }) =>
       tl.fromTo(counter, 
         { 
           textContent: 0,
-          color: '#ff00ff',
-          textShadow: '0 0 10px #ff00ff',
+          color: '#ff0000',
+          textShadow: '0 0 1px #ff0000',
           scale: 0.8,
           opacity: 0
         },
         {
           textContent: 100,
-          duration: 3,
+          duration: 4,
           roundProps: "textContent",
           ease: "power3.inOut",
-          color: '#00ffff',
-          textShadow: '0 0 20px #00ffff',
+          color: '#ff0000',
+         
           scale: 1,
           opacity: 1
         }
@@ -70,19 +70,20 @@ const Loader: React.FC<{ onLoadComplete: () => void }> = ({ onLoadComplete }) =>
       {/* Reveal bars with scale transformation */}
       <div 
         ref={topBarRef} 
-        className="absolute top-0 w-full bg-white h-1/2 origin-top"
+        className="absolute top-0 w-full bg-yellow-500 h-1/2 origin-top"
       />
       <div 
         ref={bottomBarRef} 
-        className="absolute bottom-0 w-full bg-white h-1/2 origin-bottom"
+        className="absolute bottom-0 w-full bg-blue-300 h-1/2 origin-bottom"
       />
 
       {/* Counter */}
       <div 
         ref={counterRef} 
-        className="text-8xl font-bold tracking-wider uppercase"
+        className="text-9xl font-bold tracking-wider uppercase "
         style={{ 
-          background: 'linear-gradient(45deg, #ff00ff, #00ffff)',
+          
+          background: 'linear-gradient(45deg, #ff0000, ##ff0000)',
           WebkitBackgroundClip: 'text',
           WebkitTextFillColor: 'transparent'
         }}

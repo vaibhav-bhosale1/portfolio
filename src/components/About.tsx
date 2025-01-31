@@ -11,7 +11,7 @@ import { motion } from "framer-motion";
 
 const About = () => {
   return (
-    <div className="relative max-w-screen-xl mx-auto p-6 bg-black text-white " id="about ">
+    <div className="relative max-w-screen-xl mx-auto p-6  text-white " id="about ">
   
 
       {/* Main Heading */}
@@ -58,7 +58,7 @@ const About = () => {
               <p className="text-sm">
                 Vishwakarma Institute of Information Technology
               </p>
-              <p className="font-semibold text-lg text-gray-200">CGPA: 7.75</p>
+              
             </motion.div>
           </div>
         </motion.div>

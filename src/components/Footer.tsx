@@ -1,18 +1,35 @@
 "use client";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { SiGeeksforgeeks, SiLeetcode } from "react-icons/si";
 import { motion } from "framer-motion";
 
 const Footer = () => {
+  const [visitCount, setVisitCount] = useState(0);
+
+  useEffect(() => {
+    // Retrieve the visit count from localStorage
+    const storedCount = localStorage.getItem("visitCount");
+
+    if (storedCount) {
+      setVisitCount(parseInt(storedCount) + 1);
+    } else {
+      setVisitCount(1); // First-time visit
+    }
+
+    // Update localStorage with the new count
+    localStorage.setItem("visitCount", visitCount + 1);
+  }, []);
+
   return (
-    <div className="mt-12 py-8 bg-black text-white/70 border-t border-gray-700">
+    <div className="mt-12 py-8 text-white/70 border-t border-gray-700">
       {/* Footer Content */}
       <div className="max-w-[1000px] mx-auto flex flex-col md:flex-row justify-between items-center px-6 md:px-0 space-y-4 md:space-y-0">
         {/* Name */}
-        <h1 className="text-2xl font-bold text-orange-400">
-          Vaibhav Bhosale
-        </h1>
+        <h1 className="text-2xl font-bold text-orange-400">Vaibhav Bhosale</h1>
+
+        {/* Visitor Counter */}
+        <p className="text-gray-400">Total Visits: {visitCount}</p>
 
         {/* Social Links */}
         <div className="flex space-x-6">
@@ -70,4 +87,3 @@ const Footer = () => {
 };
 
 export default Footer;
-

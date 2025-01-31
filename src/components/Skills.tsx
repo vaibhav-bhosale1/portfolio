@@ -74,7 +74,7 @@ const skillsIcon = [
 
 const Skills = () => {
   return (
-    <div className="relative bg-black py-3">
+    <div className="relative  py-3">
       {/* Background Video */}
   
       {/* Content Section */}

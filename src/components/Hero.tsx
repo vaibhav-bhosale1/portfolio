@@ -34,22 +34,9 @@ const Hero = () => {
   };
 
   return (
-    <div className="min-h-screen flex flex-col justify-center items-center overflow-hidden relative bg-black text-white">
+    <div className="min-h-screen flex flex-col justify-center items-center overflow-hidden relative  text-white">
       {/* Enhanced Video Background */}
-      <motion.div 
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 0.5 }}
-        transition={{ duration: 1.5 }}
-        className="absolute inset-0 z-0"
-      >
-        <video
-          src="/vaporwave-background.mp4"
-          autoPlay
-          loop
-          muted
-          className="w-full h-full object-cover"
-        />
-      </motion.div>
+   
 
       {/* Content with Framer Motion */}
       <motion.div 

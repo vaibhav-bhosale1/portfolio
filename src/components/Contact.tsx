@@ -6,7 +6,7 @@ import mail from "../assets/mail.png";
 
 const Contact = () => {
   return (
-    <div className="relative bg-black ">
+    <div className="relative  ">
       {/* Background Video */}
      
 
