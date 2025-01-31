@@ -1,6 +1,6 @@
-"use client"
+"use client";
 import { useState, useEffect, useRef } from "react";
-import { gsap } from 'gsap';
+import { gsap } from "gsap";
 import About from "@/components/About";
 import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
@@ -13,14 +13,23 @@ import Loader from "@/components/Loader";
 import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
 
+interface ElegantShapeProps {
+  className?: string;
+  delay?: number;
+  width?: number;
+  height?: number;
+  rotate?: number;
+  gradient?: string;
+}
+
 function ElegantShape({
-  className,
+  className = "",
   delay = 0,
   width = 400,
   height = 100,
   rotate = 0,
   gradient = "from-white/[0.08]",
-}) {
+}: ElegantShapeProps) {
   return (
     <motion.div
       initial={{
@@ -64,7 +73,7 @@ function ElegantShape({
             "backdrop-blur-[2px] border-2 border-white/[0.15]",
             "shadow-[0_8px_32px_0_rgba(255,255,255,0.1)]",
             "after:absolute after:inset-0 after:rounded-full",
-            "after:bg-[radial-gradient(circle_at_50%_50%,rgba(255,255,255,0.2),transparent_70%)]",
+            "after:bg-[radial-gradient(circle_at_50%_50%,rgba(255,255,255,0.2),transparent_70%)]"
           )}
         />
       </motion.div>
@@ -78,12 +87,12 @@ export default function Home() {
 
   const handleLoadComplete = () => {
     setIsLoading(false);
-    
+
     if (mainContentRef.current) {
       const mainContent = mainContentRef.current;
-      
+
       gsap.fromTo(
-        mainContent.children, 
+        mainContent.children,
         {
           opacity: 0,
           scale: 0.85, // Minor tweak for better effect
@@ -93,7 +102,7 @@ export default function Home() {
           scale: 1,
           duration: 0.8, // Slightly faster
           stagger: 0.15, // Faster stagger
-          ease: 'back.out(1.7)'
+          ease: "back.out(1.7)",
         }
       );
     }
