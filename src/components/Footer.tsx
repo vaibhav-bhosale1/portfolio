@@ -5,20 +5,17 @@ import { SiGeeksforgeeks, SiLeetcode } from "react-icons/si";
 import { motion } from "framer-motion";
 
 const Footer = () => {
-  const [visitCount, setVisitCount] = useState(0);
+  const [visitCount, setVisitCount] = useState<number>(0);
 
   useEffect(() => {
     // Retrieve the visit count from localStorage
     const storedCount = localStorage.getItem("visitCount");
 
-    if (storedCount) {
-      setVisitCount(parseInt(storedCount) + 1);
-    } else {
-      setVisitCount(1); // First-time visit
-    }
-
-    // Update localStorage with the new count
-    localStorage.setItem("visitCount", visitCount + 1);
+    setVisitCount((prevCount) => {
+      const newCount = storedCount ? parseInt(storedCount) + 1 : 1;
+      localStorage.setItem("visitCount", newCount.toString());
+      return newCount;
+    });
   }, []);
 
   return (
