@@ -52,10 +52,10 @@ function ElegantShape({
     >
       <motion.div
         animate={{
-          y: [0, 12, 0], // Slightly less range for a more natural feel
+          y: [0, 12, 0], // Smooth floating effect
         }}
         transition={{
-          duration: 8, // Faster animation (was 12s)
+          duration: 8,
           repeat: Number.POSITIVE_INFINITY,
           ease: "easeInOut",
         }}
@@ -95,13 +95,13 @@ export default function Home() {
         mainContent.children,
         {
           opacity: 0,
-          scale: 0.85, // Minor tweak for better effect
+          scale: 0.85, // Prevents overflow while animating
         },
         {
           opacity: 1,
           scale: 1,
-          duration: 0.8, // Slightly faster
-          stagger: 0.15, // Faster stagger
+          duration: 0.8,
+          stagger: 0.15,
           ease: "back.out(1.7)",
         }
       );
@@ -113,9 +113,11 @@ export default function Home() {
       {isLoading ? (
         <Loader onLoadComplete={handleLoadComplete} />
       ) : (
-        <div className="relative min-h-screen bg-[#030303]">
-          <div className="fixed inset-0 bg-gradient-to-br from-indigo-500/[0.05] via-transparent to-rose-500/[0.05] blur-3xl" />
+        <div className="relative min-h-screen overflow-hidden bg-[#030303]">
+          {/* Background Gradient */}
+          <div className="fixed inset-0 bg-gradient-to-br from-indigo-500/[0.05] via-transparent to-rose-500/[0.05] blur-3xl pointer-events-none" />
 
+          {/* Floating Shapes */}
           <div className="fixed inset-0 overflow-hidden pointer-events-none">
             <ElegantShape
               delay={0.2}
@@ -123,7 +125,7 @@ export default function Home() {
               height={140}
               rotate={12}
               gradient="from-indigo-500/[0.15]"
-              className="left-[-10%] md:left-[-5%] top-[15%] md:top-[20%]"
+              className="left-0 md:left-[5%] top-[15%] md:top-[20%]"
             />
 
             <ElegantShape
@@ -132,7 +134,7 @@ export default function Home() {
               height={120}
               rotate={-15}
               gradient="from-rose-500/[0.15]"
-              className="right-[-5%] md:right-[0%] top-[70%] md:top-[75%]"
+              className="right-0 md:right-[5%] top-[70%] md:top-[75%]"
             />
 
             <ElegantShape
@@ -163,6 +165,7 @@ export default function Home() {
             />
           </div>
 
+          {/* Main Content */}
           <div ref={mainContentRef} className="relative z-10">
             <Themain />
             <About />
@@ -172,6 +175,7 @@ export default function Home() {
             <Footer />
           </div>
 
+          {/* Bottom Fade Effect */}
           <div className="fixed inset-0 bg-gradient-to-t from-[#030303] via-transparent to-[#030303]/80 pointer-events-none" />
         </div>
       )}

@@ -21,29 +21,32 @@ const Contact = () => {
         >
           {/* Contact Details */}
           <div className="flex justify-center items-center">
-            <ul className="space-y-4">
-              <li className="flex items-center">
-                <Image
-                  src={phone}
-                  className="h-[110px] w-auto mr-6"
-                  alt="phone"
-                />
-                <a href="tel:8830790274">
-                  <p className="text-xl">8830790274</p>
-                </a>
-              </li>
-              <li className="flex items-center">
-                <Image
-                  src={mail}
-                  className="h-[110px] w-auto mr-6"
-                  alt="mail"
-                />
-                <a href="mailto:textmevaibhav@gmail.com">
-                  <p className="text-xl">textmevaibhav@gmail.com</p>
-                </a>
-              </li>
-            </ul>
-          </div>
+  <ul className="space-y-6 w-full max-w-xs md:max-w-md">
+    {/* Phone */}
+    <li className="flex items-center gap-4 p-3 rounded-lg border border-white/20 hover:border-white/40 transition-all duration-300 shadow-md hover:shadow-lg w-full">
+      <Image
+        src={phone}
+        className="h-[40px] w-auto md:h-[50px] transition-transform duration-300 hover:scale-105"
+        alt="phone"
+      />
+      <a href="tel:8830790274" className="text-sm md:text-lg text-white hover:text-indigo-400 transition-colors duration-300">
+        <p className="font-semibold tracking-wide break-words">+91 88307 90274</p>
+      </a>
+    </li>
+
+    {/* Email */}
+    <li className="flex items-center gap-4 p-3 rounded-lg border border-white/20 hover:border-white/40 transition-all duration-300 shadow-md hover:shadow-lg w-full flex-wrap">
+      <Image
+        src={mail}
+        className="h-[40px] w-auto md:h-[50px] transition-transform duration-300 hover:scale-105"
+        alt="mail"
+      />
+      <a href="mailto:textmevaibhav@gmail.com" className="text-sm md:text-lg text-white hover:text-indigo-400 transition-colors duration-300 break-words">
+        <p className="font-semibold tracking-wide break-words w-full">textmevaibhav@gmail.com</p>
+      </a>
+    </li>
+  </ul>
+</div>
 
           {/* Contact Form */}
           <div className="bg-white/10 p-6 rounded-xl max-w-[550px]">

@@ -1,23 +1,10 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { SiGeeksforgeeks, SiLeetcode } from "react-icons/si";
 import { motion } from "framer-motion";
 
 const Footer = () => {
-  const [visitCount, setVisitCount] = useState<number>(0);
-
-  useEffect(() => {
-    // Retrieve the visit count from localStorage
-    const storedCount = localStorage.getItem("visitCount");
-
-    setVisitCount((prevCount) => {
-      const newCount = storedCount ? parseInt(storedCount) + 1 : 1;
-      localStorage.setItem("visitCount", newCount.toString());
-      return newCount;
-    });
-  }, []);
-
   return (
     <div className="mt-12 py-8 text-white/70 border-t border-gray-700">
       {/* Footer Content */}
@@ -26,7 +13,25 @@ const Footer = () => {
         <h1 className="text-2xl font-bold text-orange-400">Vaibhav Bhosale</h1>
 
         {/* Visitor Counter */}
-        <p className="text-gray-400">Total Visits: {visitCount}</p>
+        <div className="text-gray-400 flex flex-col items-center">
+          <p>Total Visits:</p>
+          <div id="sfcchw5nf152brx1ckrkkddwuwlys1a4kfs"></div>
+          <script
+            type="text/javascript"
+            src="https://counter6.optistats.ovh/private/counter.js?c=chw5nf152brx1ckrkkddwuwlys1a4kfs&down=async"
+            async
+          ></script>
+          <noscript>
+            <a href="https://www.freecounterstat.com" title="free page counter">
+              <img
+                src="https://counter6.optistats.ovh/private/freecounterstat.php?c=chw5nf152brx1ckrkkddwuwlys1a4kfs"
+                border="0"
+                title="free page counter"
+                alt="free page counter"
+              />
+            </a>
+          </noscript>
+        </div>
 
         {/* Social Links */}
         <div className="flex space-x-6">

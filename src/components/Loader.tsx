@@ -90,7 +90,7 @@ const Loader: React.FC<{ onLoadComplete: () => void }> = ({ onLoadComplete }) =>
       >
         0
       </div>
-      <div className="text-2xl mt-4 text-white tracking-widest uppercase">
+      <div className="text-2xl mt-4 text-white tracking-widest uppercase md:items-center ">
         Loading Vaibhav Bhosale's Portfolio
       </div>
     </div>

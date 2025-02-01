@@ -36,6 +36,7 @@ const projects = [
     title: "Blogify - A Blog Website",
     desc: "Created a full-stack blog application with CRUD operations, authentication, and responsive UI.",
     devStack: "Node.js, Express.js, MongoDB, React.js, TailwindCSS",
+    link: "https://youtu.be/sUqSEC3822k",
     git: "https://github.com/vaibhav-bhosale1/",
     src: project3,
   },

@@ -55,7 +55,7 @@ const About = () => {
               <p className="text-lg font-medium">
                 B.Tech in Electronics and Telecommunication
               </p>
-              <p className="text-sm">
+              <p className="text-lg">
                 Vishwakarma Institute of Information Technology
               </p>
               
