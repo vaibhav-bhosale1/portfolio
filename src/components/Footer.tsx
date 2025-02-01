@@ -21,16 +21,17 @@ const Footer = () => {
             src="https://counter6.optistats.ovh/private/counter.js?c=chw5nf152brx1ckrkkddwuwlys1a4kfs&down=async"
             async
           ></script>
-          <noscript>
-            <a href="https://www.freecounterstat.com" title="free page counter">
-              <img
-                src="https://counter6.optistats.ovh/private/freecounterstat.php?c=chw5nf152brx1ckrkkddwuwlys1a4kfs"
-                border="0"
-                title="free page counter"
-                alt="free page counter"
-              />
-            </a>
-          </noscript>
+    <noscript>
+  <a href="https://www.freecounterstat.com" title="free page counter">
+    <img
+      src="https://counter6.optistats.ovh/private/freecounterstat.php?c=chw5nf152brx1ckrkkddwuwlys1a4kfs"
+      style={{ border: '0' }}
+      title="free page counter"
+      alt="free page counter"
+    />
+  </a>
+</noscript>
+
         </div>
 
         {/* Social Links */}
