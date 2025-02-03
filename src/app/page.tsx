@@ -1,6 +1,7 @@
 "use client";
+
 import { useState, useEffect, useRef } from "react";
-import { gsap } from "gsap";
+import dynamic from "next/dynamic";
 import About from "@/components/About";
 import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
@@ -9,9 +10,11 @@ import Skills from "@/components/Skills";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import Themain from "@/components/Themain";
-import Loader from "@/components/Loader";
 import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
+
+// Dynamically import GSAP (prevents SSR issues)
+const Loader = dynamic(() => import("@/components/Loader"), { ssr: false });
 
 interface ElegantShapeProps {
   className?: string;
@@ -32,16 +35,8 @@ function ElegantShape({
 }: ElegantShapeProps) {
   return (
     <motion.div
-      initial={{
-        opacity: 0,
-        y: -150,
-        rotate: rotate - 15,
-      }}
-      animate={{
-        opacity: 1,
-        y: 0,
-        rotate: rotate,
-      }}
+      initial={{ opacity: 0, y: -150, rotate: rotate - 15 }}
+      animate={{ opacity: 1, y: 0, rotate }}
       transition={{
         duration: 2,
         delay,
@@ -51,18 +46,13 @@ function ElegantShape({
       className={cn("fixed", className)}
     >
       <motion.div
-        animate={{
-          y: [0, 12, 0], // Smooth floating effect
-        }}
+        animate={{ y: [0, 12, 0] }} // Floating effect
         transition={{
           duration: 8,
           repeat: Number.POSITIVE_INFINITY,
           ease: "easeInOut",
         }}
-        style={{
-          width,
-          height,
-        }}
+        style={{ width, height }}
         className="relative"
       >
         <div
@@ -85,31 +75,31 @@ export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
   const mainContentRef = useRef<HTMLDivElement>(null);
 
-  const handleLoadComplete = () => {
-    setIsLoading(false);
-  
-    if (mainContentRef.current) {
-      const mainContent = mainContentRef.current;
-  
-      gsap.fromTo(
-        mainContent.children,
-        { opacity: 0, scale: 0.95 },
-        {
-          opacity: 1,
-          scale: 1,
-          duration: 0.8,
-          stagger: 0.1,
-          ease: "power2.out",
-        }
-      );
-    }
-  };
-  
+  useEffect(() => {
+    // Dynamically import GSAP on client-side
+    import("gsap").then((gsapModule) => {
+      const gsap = gsapModule.gsap;
+
+      if (mainContentRef.current) {
+        gsap.fromTo(
+          mainContentRef.current.children,
+          { opacity: 0, scale: 0.95 },
+          {
+            opacity: 1,
+            scale: 1,
+            duration: 0.8,
+            stagger: 0.1,
+            ease: "power2.out",
+          }
+        );
+      }
+    });
+  }, []);
 
   return (
     <>
       {isLoading ? (
-        <Loader onLoadComplete={handleLoadComplete} />
+        <Loader onLoadComplete={() => setIsLoading(false)} />
       ) : (
         <div className="relative min-h-screen overflow-hidden bg-[#030303]">
           {/* Background Gradient */}
@@ -125,7 +115,6 @@ export default function Home() {
               gradient="from-indigo-500/[0.15]"
               className="left-0 md:left-[5%] top-[15%] md:top-[20%]"
             />
-
             <ElegantShape
               delay={0.4}
               width={500}
@@ -134,7 +123,6 @@ export default function Home() {
               gradient="from-rose-500/[0.15]"
               className="right-0 md:right-[5%] top-[70%] md:top-[75%]"
             />
-
             <ElegantShape
               delay={0.3}
               width={300}
@@ -143,7 +131,6 @@ export default function Home() {
               gradient="from-violet-500/[0.15]"
               className="left-[5%] md:left-[10%] bottom-[5%] md:bottom-[10%]"
             />
-
             <ElegantShape
               delay={0.5}
               width={200}
@@ -152,7 +139,6 @@ export default function Home() {
               gradient="from-amber-500/[0.15]"
               className="right-[15%] md:right-[20%] top-[10%] md:top-[15%]"
             />
-
             <ElegantShape
               delay={0.6}
               width={150}
