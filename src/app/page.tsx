@@ -87,26 +87,24 @@ export default function Home() {
 
   const handleLoadComplete = () => {
     setIsLoading(false);
-
+  
     if (mainContentRef.current) {
       const mainContent = mainContentRef.current;
-
+  
       gsap.fromTo(
         mainContent.children,
-        {
-          opacity: 0,
-          scale: 0.85, // Prevents overflow while animating
-        },
+        { opacity: 0, scale: 0.95 },
         {
           opacity: 1,
           scale: 1,
           duration: 0.8,
-          stagger: 0.15,
-          ease: "back.out(1.7)",
+          stagger: 0.1,
+          ease: "power2.out",
         }
       );
     }
   };
+  
 
   return (
     <>

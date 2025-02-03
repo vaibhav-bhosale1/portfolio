@@ -87,7 +87,7 @@ const Skills = () => {
             animate={{ scale: 1, opacity: 1 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
           >
-            Technical Skills
+            Technical <span className="text-orange-400">Skills</span>
           </motion.h2>
           {/* Skills Grid */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
