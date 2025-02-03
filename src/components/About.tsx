@@ -10,7 +10,9 @@ import { SiGeeksforgeeks, SiLeetcode } from "react-icons/si";
 import { motion } from "framer-motion";
 import Education from "../../public/education.json"
 import links from "../../public/links.json"
-import Lottie from "lottie-react";
+import dynamic from "next/dynamic";
+const Lottie = dynamic(() => import("lottie-react"), { ssr: false });
+
 import about from "../../public/about.json"
 import walkingman from "../../public/walking-man.json"
 
