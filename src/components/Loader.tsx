@@ -1,39 +1,50 @@
 "use client";
-import React, { useEffect, useRef } from "react";
+
+import React, { useEffect, useRef, useState } from "react";
+import dynamic from "next/dynamic"; 
 import { gsap } from "gsap";
-import Lottie from "lottie-react";
+
+// Ensure Lottie runs only on client
+const Lottie = dynamic(() => import("lottie-react"), { ssr: false });
 import runningManAnimation from "../../public/running-man.json";
 
 const Loader: React.FC<{ onLoadComplete: () => void }> = ({ onLoadComplete }) => {
   const loaderRef = useRef<HTMLDivElement>(null);
   const animationRef = useRef<HTMLDivElement>(null);
   const textRef = useRef<HTMLSpanElement>(null);
+  const [isClient, setIsClient] = useState(false); // Ensure it runs only in the browser
 
   useEffect(() => {
-    const loader = loaderRef.current;
-    const animation = animationRef.current;
-    const text = textRef.current;
+    setIsClient(true); // Prevents SSR execution
 
-    if (loader && animation && text) {
-      const timeline = gsap.timeline({
-        defaults: { ease: "power2.out" },
-        onComplete: () => onLoadComplete(),
-      });
+    if (typeof window !== "undefined") {
+      const loader = loaderRef.current;
+      const animation = animationRef.current;
+      const text = textRef.current;
 
-      timeline
-        .fromTo(animation, { opacity: 0, scale: 0.8 }, { opacity: 1, scale: 1, duration: 0.8 })
-        .fromTo(text, { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.6 }, "-=0.3")
-        .to(animation, { opacity: 0, scale: 1.1, duration: 0.6, ease: "power2.in" }, "+=1")
-        .to(text, { opacity: 0, duration: 0.4, ease: "power2.in" }, "-=0.5")
-        .to(loader, {
-          opacity: 0,
-          duration: 0.5,
-          onComplete: () => {
-            loader.style.display = "none";
-          },
-        }, "-=0.2"); // Minor overlap to ensure seamless transition
+      if (loader && animation && text) {
+        const timeline = gsap.timeline({
+          defaults: { ease: "power2.out" },
+          onComplete: () => onLoadComplete(),
+        });
+
+        timeline
+          .fromTo(animation, { opacity: 0, scale: 0.8 }, { opacity: 1, scale: 1, duration: 0.8 })
+          .fromTo(text, { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.6 }, "-=0.3")
+          .to(animation, { opacity: 0, scale: 1.1, duration: 0.6, ease: "power2.in" }, "+=1")
+          .to(text, { opacity: 0, duration: 0.4, ease: "power2.in" }, "-=0.5")
+          .to(loader, {
+            opacity: 0,
+            duration: 0.5,
+            onComplete: () => {
+              if (loader) loader.style.display = "none";
+            },
+          }, "-=0.2");
+      }
     }
   }, [onLoadComplete]);
+
+  if (!isClient) return null; // Ensures it runs only in the browser
 
   return (
     <div
