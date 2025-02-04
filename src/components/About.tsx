@@ -8,11 +8,6 @@ import finance from "../assets/finance.png";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { SiGeeksforgeeks, SiLeetcode } from "react-icons/si";
 import { motion } from "framer-motion";
-import Education from "../../public/education.json"
-import links from "../../public/links.json"
-import Lottie from "lottie-react";
-import about from "../../public/about.json"
-import walkingman from "../../public/walking-man.json"
 
 const About = () => {
   return (
@@ -41,7 +36,7 @@ const About = () => {
               whileHover={{ rotate: 360 }}
               transition={{ duration: 1 }}
             >
-               <Lottie animationData={Education} loop autoplay   className="w-16 h-16  mx-auto" />
+              <Image src={book} alt="Education" className="w-16 h-16" />
             </motion.div>
 
             {/* Title */}
@@ -57,7 +52,7 @@ const About = () => {
               animate={{ opacity: 1 }}
               transition={{ duration: 0.8, delay: 0.4 }}
             >
-              <p className="text-lg  font-bold lg:mt-10">
+              <p className="text-lg font-medium">
                 B.Tech in Electronics and Telecommunication
               </p>
               <p className="text-lg">
@@ -84,7 +79,7 @@ const About = () => {
               whileHover={{ rotate: 360 }}
               transition={{ duration: 1 }}
             >
-                <Lottie animationData={links} loop autoplay   className="w-16 h-16 mx-auto"/>
+              <Image src={pc} alt="Links Icon" className="w-16 h-16" />
             </motion.div>
 
             {/* Title */}
@@ -114,7 +109,7 @@ const About = () => {
                   <span className="text-orange-300">{link.icon}</span>
                   <a
                     href={link.url}
-                    className="hover:text-orange-500 transition duration-300 text-lg"
+                    className="hover:text-orange-500 transition duration-300"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -142,7 +137,7 @@ const About = () => {
               whileHover={{ rotate: 360 }}
               transition={{ duration: 1 }}
             >
-                <Lottie animationData={about} loop autoplay   className="w-16 h-16 mx-auto"/>
+              <Image src={card} alt="About Icon" className="w-16 h-16" />
             </motion.div>
 
             {/* Title */}
@@ -166,25 +161,20 @@ const About = () => {
         {/* Internship Section */}
         <div className="relative bg-gray-800 rounded-lg shadow-lg overflow-hidden col-span-1 sm:col-span-2 lg:col-span-3 transform transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-orange-500 animate__animated animate__fadeIn">
           <div className="absolute inset-0 bg-black/30"></div>
-          
           <div className="p-6 relative z-10">
-          <motion.div
-  className="flex items-center justify-center p-4  rounded-full w-[130px] h-[130px] mx-auto"
-  whileHover={{ rotate: 360 }}
-  transition={{ duration: 1 }}
->
-  <Lottie animationData={walkingman} loop autoplay className="w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28" />
-</motion.div>
-
+            <Image
+              src={finance}
+              alt="Internship Experience"
+              className="w-16 h-16 mb-4 mx-auto"
+            />
             <h2 className="text-2xl font-bold text-center text-orange-400 mb-4">
-           
               Internship Experience
             </h2>
             <div className="space-y-6">
               <div className="bg-white/10 p-4 rounded-lg w-11/12 mx-auto md:w-3/4">
                 <h3 className="text-lg font-bold text-orange-300">Bluestock Fintech</h3>
                 <p className="text-sm text-gray-300">June 2023 - July 2023</p>
-                <ul className="list-disc ml-4 text-lg">
+                <ul className="list-disc ml-4">
                   <li>
                     Developed dynamic and responsive web pages using HTML, CSS,
                     JavaScript, and Bootstrap, designed and executed visually stunning
@@ -202,7 +192,7 @@ const About = () => {
               <div className="bg-white/10 p-4 rounded-lg w-11/12 mx-auto md:w-3/4">
                 <h3 className="text-lg font-bold text-orange-300">Suvidha Foundation</h3>
                 <p className="text-sm text-gray-300">May 2022 - July 2022</p>
-                <ul className="list-disc ml-4 text-lg">
+                <ul className="list-disc ml-4">
                   <li>
                     Designed and implemented the frontend using React and TailwindCSS,
                     providing flexibility in building user interfaces to create
