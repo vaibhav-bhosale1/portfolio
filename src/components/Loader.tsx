@@ -1,10 +1,22 @@
 "use client";
-import React from "react";
+import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 
-const Loader = () => {
+interface LoaderProps {
+  onLoadComplete: () => void;
+}
+
+const Loader: React.FC<LoaderProps> = ({ onLoadComplete }) => {
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      onLoadComplete(); // Call function to indicate loading is done
+    }, 3000); // Adjust time as needed
+
+    return () => clearTimeout(timer);
+  }, [onLoadComplete]);
+
   return (
-    <div className="flex flex-col items-center justify-center h-screen w-full bg-black">
+    <div className="absolute inset-0 flex flex-col items-center justify-center bg-[#030303] z-50">
       {/* Animated Text Loading Effect */}
       <motion.h1
         initial={{ opacity: 0 }}
@@ -18,7 +30,7 @@ const Loader = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{
-              delay: index * 0.08, // Smoother, staggered animation
+              delay: index * 0.08,
               type: "spring",
               stiffness: 150,
               damping: 20,
