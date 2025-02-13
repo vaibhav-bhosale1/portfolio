@@ -47,7 +47,7 @@ const About = () => {
 
             {/* Content */}
             <motion.div
-              className="space-y-2 text-gray-300"
+              className="space-y-2 text-gray-300 mt-8"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.8, delay: 0.4 }}
