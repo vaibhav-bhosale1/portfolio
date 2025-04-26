@@ -95,7 +95,7 @@ const About = () => {
               animate={{ opacity: 1 }}
               transition={{ duration: 0.8, delay: 0.4 }}
             >
-              {[{ icon: <FaGithub size={20} />, url: "https://github.com/vaibhavbhosale1", label: "Github" },
+              {[{ icon: <FaGithub size={20} />, url: "https://github.com/vaibhav-bhosale1", label: "Github" },
                 { icon: <SiLeetcode size={20} />, url: "https://leetcode.com/u/vaibhav_bhosale_/", label: "Leetcode" },
                 { icon: <FaLinkedin size={20} />, url: "https://www.linkedin.com/in/vaibhav-bhosale-0a2b13259/", label: "LinkedIn" },
                 { icon: <SiGeeksforgeeks size={20} />, url: "https://www.geeksforgeeks.org/user/vaibhavbhosale/", label: "GeeksforGeeks" },

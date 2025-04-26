@@ -59,7 +59,7 @@ const Footer = () => {
             <FaLinkedin size={24} />
           </motion.a>
           <motion.a
-            href="https://github.com/vaibhavbhosale1"
+            href="https://github.com/vaibhav-bhosale1"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-gray-300"
