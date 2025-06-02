@@ -153,7 +153,7 @@ const About = () => {
               animate={{ opacity: 1 }}
               transition={{ duration: 0.8, delay: 0.4 }}
             >
-             I'm Vaibhav Bhosale, a pre-final year student skilled in full-stack development and Data Structures & Algorithms. I specialize in building high-performance MERN stack applications, solving problems, writing clean code, and learning new technologies to deliver impactful solutions.
+             I'm Vaibhav Bhosale, a final year student skilled in full-stack development and Data Structures & Algorithms. I specialize in building high-performance MERN stack applications, solving problems, writing clean code, and learning new technologies to deliver impactful solutions.
             </motion.p>
           </div>
         </motion.div>
@@ -171,9 +171,28 @@ const About = () => {
               Internship Experience
             </h2>
             <div className="space-y-6">
+               <div className="bg-white/10 p-4 rounded-lg w-11/12 mx-auto md:w-3/4">
+                <h3 className="text-lg font-bold text-orange-300">Indian Air Force (9BRD)</h3>
+                <p className="text-sm text-gray-300">Jan 2025 - June 2025</p>
+                <ul className="list-disc ml-4">
+                  <li>
+                    Developed a React-based interface to display real-time thermal and visual inspection results, integrating AI model
+                    predictions (KNN, SVM, Autoencoder) via REST APIs to dynamically render defect overlays across 20+ PCB
+                    samples.
+                  </li>
+                  <li>
+                     Deployed the frontend on Jetson Nano & Raspberry Pi, integrating it with the inspection pipeline to enable faster
+ defect validation and reduce manual inspection time by 30%
+                  </li>
+                  <li>
+                    Implemented advanced state management and real-time image rendering in the React interface, enabling seamless
+ overlay of AI-based defect results during live inspections
+                  </li>
+                </ul>
+              </div>
               <div className="bg-white/10 p-4 rounded-lg w-11/12 mx-auto md:w-3/4">
                 <h3 className="text-lg font-bold text-orange-300">Bluestock Fintech</h3>
-                <p className="text-sm text-gray-300">June 2023 - July 2023</p>
+                <p className="text-sm text-gray-300">June 2024 - July 2024</p>
                 <ul className="list-disc ml-4">
                   <li>
                     Developed dynamic and responsive web pages using HTML, CSS,
@@ -189,23 +208,7 @@ const About = () => {
                   </li>
                 </ul>
               </div>
-              <div className="bg-white/10 p-4 rounded-lg w-11/12 mx-auto md:w-3/4">
-                <h3 className="text-lg font-bold text-orange-300">Suvidha Foundation</h3>
-                <p className="text-sm text-gray-300">May 2022 - July 2022</p>
-                <ul className="list-disc ml-4">
-                  <li>
-                    Designed and implemented the frontend using React and TailwindCSS,
-                    providing flexibility in building user interfaces to create
-                    responsive and visually appealing web applications.
-                  </li>
-                  <li>
-                    Ensured seamless communication between frontend and backend systems
-                    by implementing RESTful APIs in Node.js, creating 10+ endpoints,
-                    parsing data efficiently, and optimizing client-server interaction,
-                    resulting in a 15% decrease in data processing time.
-                  </li>
-                </ul>
-              </div>
+             
             </div>
           </div>
         </div>
