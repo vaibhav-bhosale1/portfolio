@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import project1 from "../../public/image.png";
-import project3 from "../../public/image2.png";
+import project3 from "../../public/autodock.png";
 import project2 from "../../public/virtuehirex.png";
 import project4 from "../../public/3.png"
 import { motion } from "framer-motion";
@@ -23,6 +23,13 @@ const projects = [
     link: "https://colab.research.google.com/drive/1k_a1GPbxZolEmA4AsRtorGO2HeYKTU8N?usp=sharing",
     git: "https://github.com/vaibhav-bhosale1/Blended-model-using-CNN-and-SVM-for-Classification-of-SAR-Images-",
     src: project4,
+  },{
+    title: "AutoDock-Full-Stack-CI-CD-Deployment-Engine",
+    desc: "Complete CI/CD pipeline with Docker, GitHub Actions, and AWS EC2 deployment.",
+    devStack: "React, Nodejs, Docker, AWS EC2, Github Actions ",
+    link: "https://github.com/vaibhav-bhosale1/AutoDock-Full-Stack-CI-CD-Deployment-Engine/actions/runs/15602913593",
+    git: "https://github.com/vaibhav-bhosale1/AutoDock-Full-Stack-CI-CD-Deployment-Engine",
+    src: project3,  
   },
   {
     title: "ChatterBox - Chat App",
@@ -31,15 +38,7 @@ const projects = [
     link: "https://chatterbox-2gjn.onrender.com/",
     git: "https://github.com/vaibhav-bhosale1/CHAT-APP",
     src: project1,
-  },
-  {
-    title: "Blogify - A Blog Website",
-    desc: "Created a full-stack blog application with CRUD operations, authentication, and responsive UI.",
-    devStack: "Node.js, Express.js, MongoDB, React.js, TailwindCSS",
-    link: "https://youtu.be/sUqSEC3822k",
-    git: "https://github.com/vaibhav-bhosale1/",
-    src: project3,
-  },
+  }
 ];
 
 const Portfolio = () => {
