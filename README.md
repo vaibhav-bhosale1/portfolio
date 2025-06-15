@@ -1,6 +1,6 @@
 # Vaibhav Bhosale's Portfolio
 
-Welcome to the portfolio repository of Vaibhav Bhosale, a BTech student specializing in Electronics and Telecommunication, with expertise in web development and software engineering. This portfolio showcases a variety of projects, technical skills, and accomplishments.
+Hello my name is Vaibhav Bhosale, BTech student specializing in Electronics and Telecommunication, with expertise in web development and software engineering. This portfolio showcases a variety of projects, technical skills, and accomplishments.
 
 
 ## Demo
