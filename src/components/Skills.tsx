@@ -8,10 +8,11 @@ import {
   FaJava,
   FaJsSquare,
   FaNode,
+    FaAws, FaDocker, FaGitAlt,
   FaReact,
 } from "react-icons/fa";
 import { RiNextjsFill } from "react-icons/ri";
-import { SiCplusplus, SiExpress, SiMongodb, SiMysql, SiTailwindcss, SiTypescript } from "react-icons/si";
+import { SiCplusplus, SiExpress, SiMongodb, SiMysql, SiTailwindcss, SiTypescript, SiKubernetes, SiJenkins, SiAnsible, SiGithubactions, SiJira, SiPostgresql } from "react-icons/si";
 
 const skillsIcon = [
   {
@@ -23,7 +24,7 @@ const skillsIcon = [
     label: "Node.js",
   },
   {
-    icon: <RiNextjsFill size={140} />,
+    icon: <RiNextjsFill size={140} />, 
     label: "Next.js",
   },
   {
@@ -36,7 +37,7 @@ const skillsIcon = [
   },
   {
     icon: <SiMongodb size={140} />,
-    label: "MongoDB",
+    label: "MongoDB", // Existing, not replaced
   },
   {
     icon: <SiCplusplus size={140} />,
@@ -44,7 +45,7 @@ const skillsIcon = [
   },
   {
     icon: <SiMysql size={140} />,
-    label: "MySQL",
+    label: "MySQL", // Existing, not replaced
   },
   {
     icon: <FaJava size={140} />,
@@ -69,6 +70,43 @@ const skillsIcon = [
   {
     icon: <SiTypescript size={140} />,
     label: "TypeScript",
+  },
+  // --- New Skills Added Below ---
+  {
+    icon: <FaAws size={140} />, 
+    label: "AWS",
+  },
+  {
+    icon: <FaDocker size={140} />,
+    label: "Docker",
+  },
+  {
+    icon: <SiKubernetes size={140} />,
+    label: "Kubernetes",
+  },
+  {
+    icon: <SiJenkins size={140} />, 
+    label: "Jenkins",
+  },
+  {
+    icon: <SiAnsible size={140} />,
+    label: "Ansible",
+  },
+  {
+    icon: <FaGitAlt size={140} />, 
+    label: "Git",
+  },
+  {
+    icon: <SiGithubactions size={140} />,
+    label: "GitHub Actions",
+  },
+  {
+    icon: <SiJira size={140} />, 
+    label: "JIRA",
+  },
+  {
+    icon: <SiPostgresql size={140} />,
+    label: "PostgreSQL",
   },
 ];
 
