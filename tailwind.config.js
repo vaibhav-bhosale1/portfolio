@@ -11,6 +11,52 @@ module.exports = {
   ],
   theme: {
   	extend: {
+		 animation: {
+        blob: "blob 7s infinite",
+        float: "float 6s ease-in-out infinite",
+        "pulse-subtle": "pulse-subtle 4s cubic-bezier(0.4, 0, 0.6, 1) infinite",
+      },
+      keyframes: {
+        blob: {
+          "0%": {
+            transform: "translate(0px, 0px) scale(1)",
+          },
+          "33%": {
+            transform: "translate(30px, -50px) scale(1.1)",
+          },
+          "66%": {
+            transform: "translate(-20px, 20px) scale(0.9)",
+          },
+          "100%": {
+            transform: "translate(0px, 0px) scale(1)",
+          },
+        },
+        float: {
+          "0%, 100%": {
+            transform: "translate(0, 0) rotate(0deg) scale(1)",
+            opacity: 0.2
+          },
+          "25%": {
+            transform: "translate(10px, -15px) rotate(5deg) scale(1.05)",
+            opacity: 0.3
+          },
+          "50%": {
+            transform: "translate(-10px, 15px) rotate(-5deg) scale(1)",
+            opacity: 0.25
+          },
+          "75%": {
+            transform: "translate(5px, -5px) rotate(2deg) scale(1.03)",
+            opacity: 0.35
+          }
+        },
+        "pulse-subtle": {
+          '0%, 100%': { opacity: 0.1 },
+          '50%': { opacity: 0.25 },
+        }
+      },
+    
+    
+
   		borderRadius: {
   			lg: 'var(--radius)',
   			md: 'calc(var(--radius) - 2px)',
