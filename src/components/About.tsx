@@ -96,7 +96,7 @@ const About = () => {
               <p className="text-md text-gray-400">
                 Vishwakarma Institute of Information Technology
               </p>
-              <p className="text-sm text-gray-500 mt-2">(2021 - 2025)</p>
+              <p className="text-sm text-gray-500 mt-2">(2022 - 2026)</p>
             </div>
           </motion.div>
 
