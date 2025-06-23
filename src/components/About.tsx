@@ -220,23 +220,7 @@ const About = () => {
               </ul>
             </motion.div>
             {/* Timeline Item */}
-            <motion.div
-              className="relative bg-gray-800/80 rounded-xl p-6 md:p-8 shadow-lg border-t-2 border-orange-600 group"
-              initial={{ opacity: 0, x: -100 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true, amount: 0.4 }}
-              transition={{ duration: 0.9, delay: 0.4, ease: "easeOut" }}
-            >
-              <div className="absolute -left-8 top-8 w-8 h-8 bg-gradient-to-tr from-orange-500 to-orange-300 rounded-full flex items-center justify-center text-white text-xl font-bold border-2 border-white shadow-md group-hover:scale-110 transition-transform duration-300">
-                <FaBriefcase />
-              </div>
-              <h4 className="text-2xl md:text-3xl font-bold text-orange-300 mb-1">Bluestock Fintech</h4>
-              <p className="text-sm text-gray-400 mb-4">June 2024 - July 2024</p>
-              <ul className="list-disc ml-6 space-y-2 text-gray-300 text-base leading-relaxed">
-                <li>Developed dynamic and responsive web pages using HTML, CSS, JavaScript, and Bootstrap, designed and executed visually stunning and highly functional user interfaces, leading to an increase in user engagement.</li>
-                <li>Led the effort to roll out 4 new customer-centric features in collaboration with product and engineering teams, ensuring smooth integration with backend systems, contributing to a 30% increase in user engagement metrics.</li>
-              </ul>
-            </motion.div>
+         
           </div>
         </motion.div>
       </div>
