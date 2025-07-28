@@ -16,6 +16,13 @@ const projects = [
     link: "https://virtuehirex.vercel.app/",
     git: "https://github.com/vaibhav-bhosale1/ai-mock-interview",
     src: project2,
+  }, {
+    title: "AskMyPdf - AI-Powered PDF Chatbot",
+    desc: "Developed an AI-powered chatbot that allows users to interact with PDF documents, enabling them to ask questions and receive answers based on the content of the PDF.",
+    devStack: "FastAPI, LangChain, Google Gemini, React",
+    link: "https://askmypdf-bice.vercel.app/",
+    git: "https://github.com/vaibhav-bhosale1/AskMyPDF",
+    src: project1,
   },{
     title: "Blended model using CNN and SVM for Classification of SAR Images",
     desc: "-Developed a hybrid CNN-SVM model for classifying SAR images of military vehicles (e.g., 2S1, BRDM_2, BTR60), Used CNN for feature extraction and SVM for accurate classification, Enhanced Automatic Target Recognition (ATR) in SAR imagery with improved precision and scalability.",
@@ -31,14 +38,7 @@ const projects = [
     git: "https://github.com/vaibhav-bhosale1/AutoDock-Full-Stack-CI-CD-Deployment-Engine",
     src: project3,  
   },
-  {
-    title: "ChatterBox - Chat App",
-    desc: "Integrated Socket.io for real-time messaging and online user status updates, created authentication and authorization using JWT to ensure secure access, developed robust error handling on both the server and client sides.",
-    devStack: "React.js, Node.js, Express.js, MongoDB, TailwindCSS, Daisy UI, Socket IO",
-    link: "https://chatterbox-2gjn.onrender.com/",
-    git: "https://github.com/vaibhav-bhosale1/CHAT-APP",
-    src: project1,
-  }
+ 
 ];
 
 const Portfolio = () => {
