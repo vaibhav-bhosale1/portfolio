@@ -17,19 +17,19 @@ const projects = [
     git: "https://github.com/vaibhav-bhosale1/ai-mock-interview",
     src: project2,
   }, {
+    title: "PackNPlan– AI-Powered Travel Planner",
+    desc: "PackNPlan is an AI-powered web application that uses React, Gemini AI, Firebase, and Tailwind CSS to create customized travel itineraries.",
+    devStack: "eact, Gemini AI, Firebase, TailwindCSS ",
+    link: "https://pack-n-plan-opal.vercel.app/",
+    git: "https://github.com/vaibhav-bhosale1/PackNPlan",
+    src: project4,
+  },{
     title: "AskMyPdf - AI-Powered PDF Chatbot",
     desc: "Developed an AI-powered chatbot that allows users to interact with PDF documents, enabling them to ask questions and receive answers based on the content of the PDF.",
     devStack: "FastAPI, LangChain, Google Gemini, React",
     link: "https://askmypdf-bice.vercel.app/",
     git: "https://github.com/vaibhav-bhosale1/AskMyPDF",
     src: project1,
-  },{
-    title: "Blended model using CNN and SVM for Classification of SAR Images",
-    desc: "-Developed a hybrid CNN-SVM model for classifying SAR images of military vehicles (e.g., 2S1, BRDM_2, BTR60), Used CNN for feature extraction and SVM for accurate classification, Enhanced Automatic Target Recognition (ATR) in SAR imagery with improved precision and scalability.",
-    devStack: "Deep learning, Python, SVM, CNN",
-    link: "https://colab.research.google.com/drive/1k_a1GPbxZolEmA4AsRtorGO2HeYKTU8N?usp=sharing",
-    git: "https://github.com/vaibhav-bhosale1/Blended-model-using-CNN-and-SVM-for-Classification-of-SAR-Images-",
-    src: project4,
   },{
     title: "AutoDock-Full-Stack-CI-CD-Deployment-Engine",
     desc: "Complete CI/CD pipeline with Docker, GitHub Actions, and AWS EC2 deployment.",
