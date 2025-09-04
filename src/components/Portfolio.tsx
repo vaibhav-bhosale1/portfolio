@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import project1 from "../../public/image.png";
+import project1 from "../../public/barsandbeats.png";
 import project3 from "../../public/autodock.png";
 import project2 from "../../public/virtuehirex.png";
 import project4 from "../../public/3.png"
@@ -24,11 +24,11 @@ const projects = [
     git: "https://github.com/vaibhav-bhosale1/PackNPlan",
     src: project4,
   },{
-    title: "AskMyPdf - AI-Powered PDF Chatbot",
-    desc: "Developed an AI-powered chatbot that allows users to interact with PDF documents, enabling them to ask questions and receive answers based on the content of the PDF.",
-    devStack: "FastAPI, LangChain, Google Gemini, React",
-    link: "https://askmypdf-bice.vercel.app/",
-    git: "https://github.com/vaibhav-bhosale1/AskMyPDF",
+    title: "BarsAndBeats- real-time collaborative music jamming platform",
+    desc: "Allows users to create and join a shared streaming session with friends. Participants can queue YouTube videos, upvote their favorite tracks, and enjoy an automatically managed playback experience where the most upvoted video plays next.",
+    devStack: "React.js, Tailwind CSS, Zustand, React Hook Form,Node.js (Express), Pusher Channels (WebSockets for real-time sync)",
+    link: "https://barsandbeats.vercel.app/",
+    git: "https://github.com/vaibhav-bhosale1/barsandbeats",
     src: project1,
   },{
     title: "AutoDock-Full-Stack-CI-CD-Deployment-Engine",
