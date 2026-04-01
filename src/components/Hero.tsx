@@ -133,7 +133,7 @@ const Hero = () => {
         {/* Animated Resume Button */}
         <motion.a
           variants={itemVariants}
-          href="/Resume1.pdf"
+          href="/Vaibhav_Bhosale_Resume.pdf"
           download="Vaibhav_Bhosale_Resume.pdf"
           className="inline-block mt-6 px-8 py-3 bg-orange-500 text-white text-lg font-semibold rounded-lg shadow-md hover:bg-orange-600 transition duration-300 mb-7"
           whileHover={{ scale: 1.05 }}
